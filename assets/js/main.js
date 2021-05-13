@@ -96,15 +96,24 @@ const icons =[
 		family: 'fas'
 	}
 ];
+console.log(icons);
 
 icons.forEach((icon) =>{
-    console.log(icon.name);
+    icon.colore = icon
     document.getElementById("container").insertAdjacentHTML("beforeend",`
-    <div id="icon">
+    <div class="icon">
+    <i id="logo" class= "${icon.family} ${icon.prefix}${icon.name}"></i>
     ${icon.name}
-    <i class= "${icon.family} ${icon.prefix}${icon.name}"></i>
     </div>`)
 });
+
+icons.forEach((tipo)=>{
+    if(icons === "user"){
+        
+    }
+});
+
+
 
 
 
